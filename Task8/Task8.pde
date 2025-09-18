@@ -1,4 +1,4 @@
-//Metoden jeg kunne finde mig frem til på 
+//Metoden jeg kunne finde mig frem til på docs.oracle.
 import java.util.Arrays;
 int [] sortedList={7, 2, 4, 1, 6, 10, 9, 3, 8, 5};
 
