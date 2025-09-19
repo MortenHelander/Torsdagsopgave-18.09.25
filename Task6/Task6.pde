@@ -21,14 +21,12 @@ void draw() {
       if (board[i][j]==0) {
         fill(0);
       }
-      if(board[i][j]==1){
+      if (board[i][j]==1) {
         fill(255);
-        println(board[i][j]);
       }
       //Virkede ikke, da jeg havde den inde i if statementen hvilket vil sige,
       //jeg kun tegnede enten hvide sorte kasser.
       rect(i*sideLength, j*sideLength, sideLength, sideLength);
     }
-    
   }
 }
