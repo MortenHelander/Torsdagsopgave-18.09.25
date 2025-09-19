@@ -13,14 +13,36 @@ class Circle {
   }
 
   void display() {
-    fill(0);
+    fill(20,200,20);
     circle(xpos, ypos, cWidth);
   }
 
 
-  void move(int xpos, int ypos) {
-    this.xpos+=xpos;
-    this.ypos+=ypos;
-    
+  void move() {
+    //Right.
+    if (moveRight) {
+      xpos += 1;
+      if (xpos >= width - cWidth / 2) {
+        moveRight = false;
+      }
+    } else {
+      xpos -= 1;
+      if (xpos <= cWidth / 2) {
+        moveRight = true;
+      }
+    }
+
+    //Up.
+    if (moveUp) {
+      ypos += 1;
+      if (ypos >= height - cWidth / 2) {
+        moveUp = false;
+      }
+    } else {
+      ypos -= 1;
+      if (ypos <= cWidth / 2) {
+        moveUp = true;
+      }
+    }
   }
 }
